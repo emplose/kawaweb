@@ -1,6 +1,42 @@
-$color1    : #FFF;          // White
-$color2    : #a1d8b1;       // Green
+$color1             : #FFF;          // White
+$color2             : #2c2c2c;       // Green
+$color3             : #E55500;       // Orange
+
+$font-light         : 'montserratlight';
+$font-regular       : 'montserratregular';
+$font-semi-bold     : 'montserratsemi_bold';
+$font-extra-bold    : 'montserratextra_bold';
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'montserratlight';
+    color: $color2;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: $font-regular;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    span {
+        font-family: $font-extra-bold;
+    }
+}
+
+.block {
+    width: 100%;
+    padding: 30px 0;
+    &.black {
+        background: $color2;
+        color: $color1;
+    }
+}
+.content {
+    width: 520px;
+    margin: auto;
+}
+p {
+    line-height: 20px;
+    text-align: justify;
 }

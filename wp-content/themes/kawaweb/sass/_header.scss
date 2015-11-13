@@ -1,37 +1,42 @@
 #header {
-    background: url('images/header.jpg') no-repeat;
-    height: 338px;
-    width: 100%;
-    background-size: cover;
-    position: relative;
-    #logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        @include transform(translate(-50%,-50%));
-    }
-    nav {
-        position: absolute;
-        bottom: -3px;
+    width: 1120px;
+    margin: auto;
+    #head-artwork {
+        background: url('images/header.jpg') no-repeat;
         width: 100%;
-        .nav-menu {
-            width: 1080px;
-            margin: auto;
+        height: 549px;
+    }
+    #top-menu {
+        height: 50px;
+        line-height: 50px;
+        #logo {
+           float: left;
+            margin-top: 10px;
+            margin-left: 10px;
         }
-        ul{
-            li{
-                display: inline-block;
-                margin-right: 50px;
-                border-bottom: 2px solid transparent;
-                padding-bottom: 3px;
-                &.current_page_item {
-                    border-bottom: 3px solid $color2;
-                }
-                a {
-                    color: $color1;
-                    text-transform: uppercase;
+        nav {
+            float: right;
+            .nav-menu {
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    margin-right: 35px;
+                    height: 35px;
+                    border-bottom: 2px solid transparent;
+                    padding-bottom: 0px;
+                    &.current_page_item, &:hover {
+                        border-bottom: 3px solid $color3;
+                    }
+                    a {
+                        color: $color2;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-family: $font-semi-bold; 
+                    }
                 }
             }
         }
     }
+    
 }
