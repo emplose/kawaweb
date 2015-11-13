@@ -72,12 +72,12 @@ body {
 
 /* line 15, sass/_common.scss */
 h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-family: "montserratregular";
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 /* line 22, sass/_common.scss */
 h1 span {
@@ -97,13 +97,15 @@ h1 span {
 
 /* line 35, sass/_common.scss */
 .content {
-  width: 520px;
+  width: 700px;
   margin: auto;
 }
 
 /* line 39, sass/_common.scss */
 p {
   line-height: 20px;
+  font-family: "montserratlight";
+  font-size: 14px;
   text-align: justify;
 }
 

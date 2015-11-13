@@ -13,12 +13,12 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 36px;
     font-family: $font-regular;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     span {
         font-family: $font-extra-bold;
     }
@@ -33,10 +33,12 @@ h1 {
     }
 }
 .content {
-    width: 520px;
+    width: 700px;
     margin: auto;
 }
 p {
     line-height: 20px;
+    font-family: $font-light;
+    font-size: 14px;
     text-align: justify;
 }
