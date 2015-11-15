@@ -23,6 +23,9 @@ h1 {
         font-family: $font-extra-bold;
     }
 }
+h2 {
+    font-size: 25px;
+}
 
 .block {
     width: 100%;
@@ -41,4 +44,11 @@ p {
     font-family: $font-light;
     font-size: 14px;
     text-align: justify;
+    margin-bottom: 15px;
+}
+
+.img-center {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
 }

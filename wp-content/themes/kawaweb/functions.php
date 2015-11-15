@@ -118,6 +118,19 @@ add_action( 'after_setup_theme', 'twentythirteen_setup' );
  *
  * @return string Font stylesheet or empty string if disabled.
  */
+
+add_filter( 'body_class', 'gkp_add_slug_body_class' );
+function gkp_add_slug_body_class( $classes ) 
+{
+   
+   if ( is_page() ) 
+   {
+	global $post;
+        $classes[] = $post->post_type . '-' . $post->post_name;
+    }
+	
+    return $classes;
+}
 function twentythirteen_fonts_url() {
 	$fonts_url = '';
 

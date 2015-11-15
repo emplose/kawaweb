@@ -31,17 +31,33 @@
         <?php wp_head(); ?>
     </head>
 
-    <body <?php body_class(); ?> >
+    <body <?php body_class(); ?>  >
         <div id="page" class="hfeed site">
             <header id="header" >
                 <div id="top-menu">
-                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="logo"><img src="<?php echo get_bloginfo('template_directory');?>/images/logo-kawaweb.png" alt=""></a>
-                    <nav id="main-nav">
-                        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
-                    </nav>
+                    <div class="head-content">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="logo" class="black"><img src="<?php echo get_bloginfo('template_directory');?>/images/logo-kawaweb.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="logo" class="white"><img src="<?php echo get_bloginfo('template_directory');?>/images/logo-kawaweb-white.png" alt=""></a>
+                        <nav id="main-nav">
+                            <?php  wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
+                        </nav>
+                    </div>
                 </div>
-                <div id="head-artwork"></div>
-               
+                <div id="head-artwork">
+                    <div class="visible-header a-propos">
+                        <h1>Kawaweb // <span>à propos</span></h1>
+                        <h2>10 ans d'expérience</h2>
+                    </div>
+                    <div class="visible-header prestations">
+                        <h1>Kawaweb // <span>nos prestations</span></h1>
+                        <h2>3 mots clés</h2>
+                    </div>
+                    <div class="visible-header contact">
+                        <h1>Kawaweb // <span>contactez-nous</span></h1>
+                        <h2>L'étude est gratuite</h2>
+                    </div>
+                </div>
+
             </header><!-- #masthead -->
 
             <div id="main" class="site-main">
