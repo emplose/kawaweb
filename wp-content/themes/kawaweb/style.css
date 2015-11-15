@@ -144,19 +144,27 @@ p {
 #header #top-menu {
   height: 50px;
   line-height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
-/* line 19, sass/_header.scss */
+/* line 23, sass/_header.scss */
+#header #top-menu .head-content {
+  width: 1120px;
+  margin: auto;
+}
+/* line 27, sass/_header.scss */
 #header #top-menu #logo {
   float: left;
   margin-top: 10px;
   margin-left: 10px;
   display: none;
 }
-/* line 25, sass/_header.scss */
+/* line 33, sass/_header.scss */
 #header #top-menu nav {
   float: right;
 }
-/* line 30, sass/_header.scss */
+/* line 38, sass/_header.scss */
 #header #top-menu nav ul li {
   display: inline-block;
   margin-right: 35px;
@@ -164,11 +172,11 @@ p {
   border-bottom: 2px solid transparent;
   padding-bottom: 0px;
 }
-/* line 36, sass/_header.scss */
+/* line 44, sass/_header.scss */
 #header #top-menu nav ul li.current_page_item, #header #top-menu nav ul li:hover {
   border-bottom: 3px solid #E55500;
 }
-/* line 39, sass/_header.scss */
+/* line 47, sass/_header.scss */
 #header #top-menu nav ul li a {
   color: #2c2c2c;
   text-transform: uppercase;
@@ -176,27 +184,28 @@ p {
   font-family: "montserratsemi_bold";
 }
 
-/* line 50, sass/_header.scss */
-.page-accueil #header {
-  width: 1120px;
-  margin: auto;
-}
-/* line 53, sass/_header.scss */
+/* line 59, sass/_header.scss */
 .page-accueil #header #head-artwork {
   background: url("images/header.jpg") no-repeat;
   width: 100%;
+  background-position: center;
+  margin-top: 50px;
 }
-/* line 58, sass/_header.scss */
+/* line 65, sass/_header.scss */
+.page-accueil #header #top-menu {
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 68, sass/_header.scss */
 .page-accueil #header #top-menu #logo.black {
   display: block !important;
 }
 
-/* line 65, sass/_header.scss */
+/* line 75, sass/_header.scss */
 .page-a-propos #header, .page-nos-prestations #header, .page-contactez-nous #header {
   width: 100%;
   height: 549px;
 }
-/* line 68, sass/_header.scss */
+/* line 78, sass/_header.scss */
 .page-a-propos #header #top-menu, .page-nos-prestations #header #top-menu, .page-contactez-nous #header #top-menu {
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
   /* FF3.6-15 */
@@ -206,54 +215,48 @@ p {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
   /* IE6-9 */
-  position: relative;
   z-index: 1;
 }
-/* line 75, sass/_header.scss */
-.page-a-propos #header #top-menu .head-content, .page-nos-prestations #header #top-menu .head-content, .page-contactez-nous #header #top-menu .head-content {
-  width: 1120px;
-  margin: auto;
-}
-/* line 79, sass/_header.scss */
+/* line 85, sass/_header.scss */
 .page-a-propos #header #top-menu nav li a, .page-nos-prestations #header #top-menu nav li a, .page-contactez-nous #header #top-menu nav li a {
   color: #FFF;
 }
-/* line 82, sass/_header.scss */
+/* line 88, sass/_header.scss */
 .page-a-propos #header #top-menu #logo.white, .page-nos-prestations #header #top-menu #logo.white, .page-contactez-nous #header #top-menu #logo.white {
   display: block !important;
 }
-/* line 86, sass/_header.scss */
+/* line 92, sass/_header.scss */
 .page-a-propos #header #head-artwork, .page-nos-prestations #header #head-artwork, .page-contactez-nous #header #head-artwork {
   background-size: cover !important;
   position: absolute;
   top: 0;
 }
 
-/* line 97, sass/_header.scss */
+/* line 103, sass/_header.scss */
 .page-a-propos #header #head-artwork {
   background: url("images/header-a-propos.jpg") no-repeat;
 }
-/* line 99, sass/_header.scss */
+/* line 105, sass/_header.scss */
 .page-a-propos #header #head-artwork .visible-header.a-propos {
   display: block;
   color: #FFF;
 }
 
-/* line 109, sass/_header.scss */
+/* line 115, sass/_header.scss */
 .page-nos-prestations #header #head-artwork {
-  background: url("images/header-prestations.jpg") no-repeat;
+  background: url("images/header-prestations2.jpg") no-repeat;
 }
-/* line 111, sass/_header.scss */
+/* line 117, sass/_header.scss */
 .page-nos-prestations #header #head-artwork .visible-header.prestations {
   display: block;
-  color: #2c2c2c;
+  color: #FFF;
 }
 
-/* line 121, sass/_header.scss */
+/* line 127, sass/_header.scss */
 .page-contactez-nous #header #head-artwork {
   background: url("images/header-contact.jpg") no-repeat;
 }
-/* line 123, sass/_header.scss */
+/* line 129, sass/_header.scss */
 .page-contactez-nous #header #head-artwork .visible-header.contact {
   display: block;
   color: #FFF;
